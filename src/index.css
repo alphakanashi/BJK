@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: 'Inter', system-ui, sans-serif;
+  color-scheme: dark;
+}
+
+select,
+select option {
+  background-color: #111526;
+  color: #ffffff;
+  color-scheme: dark;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #2b2b2b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #383838;
+}
+
+[class*="bg-blue-"],
+[class*="bg-emerald-"],
+[class*="bg-pink-"],
+[class*="bg-yellow-"],
+[class*="bg-red-"] {
+  background-color: #f5f5f5 !important;
+  color: #080808 !important;
+}
+
+[class*="bg-blue-"].text-white,
+[class*="bg-emerald-"].text-white,
+[class*="bg-pink-"].text-white,
+[class*="bg-yellow-"].text-white,
+[class*="bg-red-"].text-white {
+  color: #080808 !important;
+}
+
+[class*="text-blue-"],
+[class*="text-emerald-"],
+[class*="text-pink-"],
+[class*="text-yellow-"],
+[class*="text-red-"] {
+  color: #f5f5f5 !important;
+}
+
+[class*="bg-blue-"][class*="text-blue-"],
+[class*="bg-emerald-"][class*="text-emerald-"],
+[class*="bg-pink-"][class*="text-pink-"],
+[class*="bg-yellow-"][class*="text-yellow-"],
+[class*="bg-red-"][class*="text-red-"] {
+  color: #080808 !important;
+}
+
+[class*="border-blue-"],
+[class*="border-emerald-"],
+[class*="border-pink-"],
+[class*="border-yellow-"],
+[class*="border-red-"] {
+  border-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+[class*="shadow-blue-"],
+[class*="shadow-emerald-"],
+[class*="shadow-pink-"],
+[class*="shadow-yellow-"],
+[class*="shadow-red-"] {
+  --tw-shadow-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+[class*="bg-[#070914]"],
+[class*="bg-[#061819]"],
+[class*="bg-[#111526]"],
+[class*="bg-[#12233e]"] {
+  background-color: #111111 !important;
+}
+
+.text-slate-300,
+.text-slate-400,
+.text-slate-500,
+.text-slate-600 {
+  color: #d8d8d8 !important;
+}
+
+/* Striped background pattern */
+.bjk-stripes {
+  background-image: repeating-linear-gradient(
+    90deg,
+    #000000 0px,
+    #000000 40px,
+    #ffffff 40px,
+    #ffffff 80px
+  );
+}
